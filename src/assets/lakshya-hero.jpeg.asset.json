@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "asset_id": "f705a8a7-a095-4dd1-9c0e-91e63277ab35",
+  "project_id": "3cacd581-367b-4de2-8160-2dddef54b177",
+  "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/3cacd581-367b-4de2-8160-2dddef54b177/image-gen/bc5ecc5c-61b0-4efc-85f1-d734935aba64?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=go-api%40lovable-core-prod.iam.gserviceaccount.com%2F20260921%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260921T155438Z&X-Goog-Expires=3599&X-Goog-Signature=ce49c487c9d9fd2c17ac90c4986a329b82a049cff9d34e4b4cf099097c7b954f8e4cea4639affefd0553c6353b7fcbaa41060a51c656acb0e74c9ed22059ea4d5a5d6dbdf154e33394d02903d3bba090333c257f074ff19f98c40eb4878141660cfcf1dcf6139d55f3277f2ba6ab9dfb549d33a38f6c22d4beca1da7e03f0e7e9e2af5fa2c63f370dbea87250ebba447d29940bce9e06b77d9ed50d9bbb847badd7f4b6022cc62dcf304c0fd23dfab1f6fe87a5ebc2f7642a0bb060c98f409608776a80e57d50b7b42dbfd0fc6c5e20b5fec33e35e83a04b24a43a73ac96bacd91310887337ce69ebba451f7961a064003d3cb0e8238eee957641f7c86d76639&X-Goog-SignedHeaders=host",
+  "r2_key": "a/v1/3cacd581-367b-4de2-8160-2dddef54b177/f705a8a7-a095-4dd1-9c0e-91e63277ab35/lakshya-hero.jpeg",
+  "original_filename": "lakshya-hero.jpeg",
+  "size": 129432,
+  "content_type": "image/jpeg",
+  "created_at": "2026-09-15T03:36:46Z"
+}
