@@ -1,4 +1,4 @@
-# Lakshya tech Portfolio
+# Lakshya_tech Portfolio
 
 Build a premium, production-ready personal portfolio website for **Lakshya.Tech**, a B.Tech CSE (Artificial Intelligence and Machine Learning) student at **PW Institute of Innovation (PW IOI)**.
 
