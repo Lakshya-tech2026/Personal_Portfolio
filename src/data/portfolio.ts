@@ -9,6 +9,10 @@
 import aboutImage from "../assets/lakshya-about.jpeg";
 import portraitAsset from "../assets/lakshya-portrait.png.asset.json";
 import aboutPhotoAsset from "../assets/lakshya-about.png.asset.json";
+import certificateAsset from "../assets/lakshya-row-33-certificate.pdf";
+import certificateAssetAlt from "../assets/lakshya-row-33-certificate-chandra.pdf";
+import certificatePreview1 from "../assets/certificates/certificate-row-33-1.png";
+import certificatePreview2 from "../assets/certificates/certificate-row-33-2.png";
 
 export const personal = {
   brand: "Lakshya.Tech",
@@ -331,13 +335,35 @@ export const experienceFallback =
 export type Achievement = {
   title: string;
   category:
-    "Certification" | "Hackathon" | "Competition" | "Project" | "Course" | "Technical Milestone";
+    | "Certification"
+    | "Hackathon"
+    | "Competition"
+    | "Project"
+    | "Course"
+    | "Technical Milestone";
   date?: string;
   description?: string;
   url?: string;
+  imageUrl?: string;
 };
 
-/** Add real achievements here. Left empty on purpose — nothing invented. */
-export const achievements: Achievement[] = [];
+export const achievements: Achievement[] = [
+  {
+    title: "Certificate of Achievement",
+    category: "Certification",
+    date: "2026",
+    description: "Recognition for a completed academic / technical certification milestone.",
+    url: certificateAsset,
+    imageUrl: certificatePreview1,
+  },
+  {
+    title: "Certificate of Achievement",
+    category: "Certification",
+    date: "2026",
+    description: "Alternate certificate copy for the same achievement record.",
+    url: certificateAssetAlt,
+    imageUrl: certificatePreview2,
+  },
+];
 
 export const achievementsFallback = "More milestones coming soon.";

@@ -53,48 +53,41 @@
 :root {
   --radius: 1.25rem;
 
-  /* #050816 */
-  --background: oklch(0.13 0.032 268);
-  /* #0B1120 */
-  --surface: oklch(0.171 0.029 265);
-  /* #F8FAFC */
-  --foreground: oklch(0.984 0.003 247);
-  /* #0F172A */
-  --card: oklch(0.209 0.035 265);
-  --card-foreground: oklch(0.984 0.003 247);
-  --popover: oklch(0.171 0.029 265);
-  --popover-foreground: oklch(0.984 0.003 247);
+  /* Black, neon purple, and mint accent palette */
+  --background: #09090b;
+  --surface: #121019;
+  --foreground: #fafafa;
+  --card: #181326;
+  --card-foreground: #fafafa;
+  --popover: #181326;
+  --popover-foreground: #fafafa;
 
-  /* #38BDF8 */
-  --primary: oklch(0.783 0.121 231);
-  --primary-foreground: oklch(0.15 0.03 260);
-  /* #6366F1 */
-  --secondary: oklch(0.585 0.203 277);
-  --secondary-foreground: oklch(0.984 0.003 247);
+  --primary: #10b981;
+  --primary-foreground: #09090b;
+  --secondary: #1a2420;
+  --secondary-foreground: #fafafa;
 
-  --muted: oklch(0.24 0.033 265);
-  /* #94A3B8 */
-  --muted-foreground: oklch(0.711 0.035 257);
-  --accent: oklch(0.783 0.121 231);
-  --accent-foreground: oklch(0.15 0.03 260);
+  --muted: #241d32;
+  --muted-foreground: #c4b5d7;
+  --accent: #c084fc;
+  --accent-foreground: #09090b;
   --destructive: oklch(0.62 0.21 25);
-  --destructive-foreground: oklch(0.984 0.003 247);
+  --destructive-foreground: #fafafa;
 
-  /* rgba(148,163,184,0.15) */
-  --border: oklch(0.711 0.035 257 / 15%);
-  --border-strong: oklch(0.783 0.121 231 / 45%);
-  --input: oklch(0.711 0.035 257 / 18%);
-  --ring: oklch(0.783 0.121 231 / 60%);
+  --border: rgb(192 132 252 / 18%);
+  --border-strong: rgb(192 132 252 / 48%);
+  --input: rgb(192 132 252 / 22%);
+  --ring: rgb(192 132 252 / 55%);
 
-  --gradient-accent: linear-gradient(135deg, oklch(0.783 0.121 231), oklch(0.585 0.203 277));
+  --gradient-accent: linear-gradient(135deg, #10b981, #c084fc);
   --gradient-surface: linear-gradient(
     160deg,
-    oklch(0.209 0.035 265 / 90%),
-    oklch(0.171 0.029 265 / 70%)
+    rgb(24 19 38 / 96%),
+    rgb(18 16 25 / 92%)
   );
   --glow-accent:
-    0 0 0 1px oklch(0.783 0.121 231 / 25%), 0 18px 50px -18px oklch(0.783 0.121 231 / 45%);
-  --shadow-card: 0 24px 60px -32px oklch(0.05 0.02 260 / 90%);
+    0 0 0 1px rgb(16 185 129 / 24%), 0 18px 50px -18px rgb(16 185 129 / 34%);
+  --shadow-card: 0 24px 60px -32px rgb(0 0 0 / 80%);
 }
 
 @layer base {
@@ -117,7 +110,7 @@
   }
 
   ::selection {
-    background: oklch(0.783 0.121 231 / 30%);
+    background: rgb(168 85 247 / 35%);
   }
 
   h1 {
@@ -253,8 +246,8 @@
 
 @utility grid-backdrop {
   background-image:
-    linear-gradient(to right, oklch(0.711 0.035 257 / 7%) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(0.711 0.035 257 / 7%) 1px, transparent 1px);
+    linear-gradient(to right, rgb(192 132 252 / 8%) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(192 132 252 / 8%) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent 75%);
 }

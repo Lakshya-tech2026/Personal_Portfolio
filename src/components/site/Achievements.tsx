@@ -29,6 +29,14 @@ export function Achievements() {
             {achievements.map((item, i) => (
               <Reveal as="li" key={item.title} delay={i * 70}>
                 <article className="panel card-hover h-full p-6">
+                  {item.imageUrl ? (
+                    <div className="mb-4 overflow-hidden rounded-xl border border-border bg-muted/20">
+                      <div
+                        className="aspect-[4/3] w-full bg-cover bg-center bg-no-repeat"
+                        style={{ backgroundImage: `url(${item.imageUrl})` }}
+                      />
+                    </div>
+                  ) : null}
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-background/60 text-primary">
                     <Trophy size={18} />
                   </span>

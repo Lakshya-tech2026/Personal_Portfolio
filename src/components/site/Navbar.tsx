@@ -28,7 +28,7 @@ export function Navbar() {
         className="container-page flex h-16 items-center justify-between gap-4 md:h-20"
       >
         <a href="#home" className="text-base font-bold tracking-tight md:text-lg">
-          Lakshya<span className="text-primary">.Tech</span>
+          Lakshya<span className="text-[#38BDF8]">.Tech</span>
         </a>
 
         <div className="hidden items-center gap-1 lg:flex">
