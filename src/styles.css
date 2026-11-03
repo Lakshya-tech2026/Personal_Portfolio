@@ -86,18 +86,14 @@
   --input: oklch(0.711 0.035 257 / 18%);
   --ring: oklch(0.783 0.121 231 / 60%);
 
-  --gradient-accent: linear-gradient(
-    135deg,
-    oklch(0.783 0.121 231),
-    oklch(0.585 0.203 277)
-  );
+  --gradient-accent: linear-gradient(135deg, oklch(0.783 0.121 231), oklch(0.585 0.203 277));
   --gradient-surface: linear-gradient(
     160deg,
     oklch(0.209 0.035 265 / 90%),
     oklch(0.171 0.029 265 / 70%)
   );
-  --glow-accent: 0 0 0 1px oklch(0.783 0.121 231 / 25%),
-    0 18px 50px -18px oklch(0.783 0.121 231 / 45%);
+  --glow-accent:
+    0 0 0 1px oklch(0.783 0.121 231 / 25%), 0 18px 50px -18px oklch(0.783 0.121 231 / 45%);
   --shadow-card: 0 24px 60px -32px oklch(0.05 0.02 260 / 90%);
 }
 

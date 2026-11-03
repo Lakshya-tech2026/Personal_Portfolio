@@ -12,7 +12,10 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="scroll-mt-24 border-t border-border bg-surface/40 py-20 md:py-28">
+    <section
+      id="about"
+      className="scroll-mt-24 border-t border-border bg-surface/40 py-20 md:py-28"
+    >
       <div className="container-page grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:gap-16">
         <ProfileCard />
 
@@ -28,22 +31,22 @@ export function About() {
 
           <Reveal delay={120} className="mt-10">
             <ul className="panel grid gap-1 p-5 sm:grid-cols-2 sm:p-6">
-            {info.map(({ label, value, Icon }) => (
-              <li
-                key={label}
-                className="flex items-start gap-4 rounded-xl px-2 py-3.5 transition-colors hover:bg-muted/40"
-              >
-                <span className="mt-0.5 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-border bg-background/60 text-primary">
-                  <Icon size={18} />
-                </span>
-                <span>
-                  <span className="block font-mono text-[11px] tracking-widest text-muted-foreground uppercase">
-                    {label}
+              {info.map(({ label, value, Icon }) => (
+                <li
+                  key={label}
+                  className="flex items-start gap-4 rounded-xl px-2 py-3.5 transition-colors hover:bg-muted/40"
+                >
+                  <span className="mt-0.5 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-border bg-background/60 text-primary">
+                    <Icon size={18} />
                   </span>
-                  <span className="mt-1 block font-semibold">{value}</span>
-                </span>
-              </li>
-            ))}
+                  <span>
+                    <span className="block font-mono text-[11px] tracking-widest text-muted-foreground uppercase">
+                      {label}
+                    </span>
+                    <span className="mt-1 block font-semibold">{value}</span>
+                  </span>
+                </li>
+              ))}
             </ul>
           </Reveal>
         </div>

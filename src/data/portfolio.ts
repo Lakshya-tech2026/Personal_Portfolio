@@ -6,7 +6,7 @@
  * achievements and contact details.
  * ─────────────────────────────────────────────────────────────
  */
-import aboutImage from "../assets/lakshya-about.jpeg"
+import aboutImage from "../assets/lakshya-about.jpeg";
 import portraitAsset from "../assets/lakshya-portrait.png.asset.json";
 import aboutPhotoAsset from "../assets/lakshya-about.png.asset.json";
 
@@ -25,8 +25,7 @@ export const personal = {
     eyebrow: "ASPIRING",
     headlineLead: "AI/ML",
     headlineHighlight: "Engineer",
-    subtitle:
-      "Building intelligent solutions with code, data, and a vision for a better tomorrow.",
+    subtitle: "Building intelligent solutions with code, data, and a vision for a better tomorrow.",
     primaryCta: "View My Work",
     secondaryCta: "Let's Connect",
     strengths: ["Python", "Java", "Machine Learning"],
@@ -261,12 +260,22 @@ export const projects: Project[] = [
     caseStudy: {
       overview:
         "The goal of this portfolio is to build my personal brand, showcase my technical skills, and present my projects in a professional way. It helps recruiters, clients, and fellow developers learn more about me.",
-      problem: "A basic profile page does not fully demonstrate my skills or creativity. I needed a dedicated website where I could present my work, share my learning journey, and connect with opportunities.",
-      approach: "I designed a modern, responsive portfolio with a clean layout, attractive typography, smooth animations, and separate sections for my introduction, skills, projects, and contact information.",
+      problem:
+        "A basic profile page does not fully demonstrate my skills or creativity. I needed a dedicated website where I could present my work, share my learning journey, and connect with opportunities.",
+      approach:
+        "I designed a modern, responsive portfolio with a clean layout, attractive typography, smooth animations, and separate sections for my introduction, skills, projects, and contact information.",
       technology: ["HTML", "CSS", "JavaScript"],
-      keyFeatures: ["Responsive design for mobile, tablet, and desktop.","Project showcase with descriptions.","Contact and social media links.","Smooth animations and modern UI.","Easy-to-update content."],
-      challenges: "As a beginner, I needed to organize the content, create a consistent design, and make the website work across different screen sizes. I focused on learning the fundamentals of web development and improving the user experience.",
-      learned: "Created a personal platform to showcase my work, track my progress, and build my online presence as an aspiring developer.",
+      keyFeatures: [
+        "Responsive design for mobile, tablet, and desktop.",
+        "Project showcase with descriptions.",
+        "Contact and social media links.",
+        "Smooth animations and modern UI.",
+        "Easy-to-update content.",
+      ],
+      challenges:
+        "As a beginner, I needed to organize the content, create a consistent design, and make the website work across different screen sizes. I focused on learning the fundamentals of web development and improving the user experience.",
+      learned:
+        "Created a personal platform to showcase my work, track my progress, and build my online presence as an aspiring developer.",
       future: ["Add more real-world projects.", "Improve accessibility and performance."],
     },
   },
@@ -322,12 +331,7 @@ export const experienceFallback =
 export type Achievement = {
   title: string;
   category:
-    | "Certification"
-    | "Hackathon"
-    | "Competition"
-    | "Project"
-    | "Course"
-    | "Technical Milestone";
+    "Certification" | "Hackathon" | "Competition" | "Project" | "Course" | "Technical Milestone";
   date?: string;
   description?: string;
   url?: string;

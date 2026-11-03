@@ -64,9 +64,7 @@ export function SectionHeading({
   return (
     <Reveal className={cn("max-w-2xl", className)}>
       {eyebrow ? (
-        <p className="mb-3 font-mono text-xs tracking-[0.25em] text-primary uppercase">
-          {eyebrow}
-        </p>
+        <p className="mb-3 font-mono text-xs tracking-[0.25em] text-primary uppercase">{eyebrow}</p>
       ) : null}
       <h2 className="text-3xl font-bold sm:text-4xl md:text-[2.75rem] md:leading-[1.1]">
         {title} {highlight ? <span className="accent-text">{highlight}</span> : null}

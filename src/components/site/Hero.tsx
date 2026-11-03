@@ -1,14 +1,6 @@
-import {
-  ArrowRight,
-  BrainCircuit,
-  Code2,
-  Coffee,
-  Github,
-  Linkedin,
-  Mail,
-} from "lucide-react";
+import { ArrowRight, BrainCircuit, Code2, Coffee, Github, Linkedin, Mail } from "lucide-react";
 import { links, personal, profile } from "@/data/portfolio";
-import heroImage from"@/assets/lakshya-hero.jpeg";
+import heroImage from "@/assets/lakshya-hero.jpeg";
 import { ActionLink } from "./primitives";
 import { NeuralVisual } from "./NeuralVisual";
 
@@ -29,22 +21,16 @@ export function Hero() {
 
       <div className="container-page relative grid min-h-[calc(100svh-7rem)] items-center gap-10 pb-10 lg:grid-cols-[0.88fr_1.12fr] lg:gap-0 lg:pb-0">
         <div className="relative z-20 py-8 lg:py-14">
-          <p
-            className="animate-fade-up font-mono text-[11px] tracking-[0.42em] text-muted-foreground uppercase sm:text-xs"
-          >
+          <p className="animate-fade-up font-mono text-[11px] tracking-[0.42em] text-muted-foreground uppercase sm:text-xs">
             {hero.eyebrow}
           </p>
 
-          <h1
-            className="mt-4 animate-fade-up text-[3.7rem] leading-[0.9] font-bold sm:text-[5rem] lg:text-[6rem] [animation-delay:100ms]"
-          >
+          <h1 className="mt-4 animate-fade-up text-[3.7rem] leading-[0.9] font-bold sm:text-[5rem] lg:text-[6rem] [animation-delay:100ms]">
             <span className="accent-text block">{hero.headlineLead}</span>
             <span className="mt-2 block text-foreground">{hero.headlineHighlight}</span>
           </h1>
 
-          <p
-            className="mt-7 max-w-md animate-fade-up text-sm text-muted-foreground sm:text-base [animation-delay:180ms]"
-          >
+          <p className="mt-7 max-w-md animate-fade-up text-sm text-muted-foreground sm:text-base [animation-delay:180ms]">
             {hero.subtitle}
           </p>
 
@@ -67,9 +53,7 @@ export function Hero() {
             ))}
           </ul>
 
-          <div
-            className="mt-7 flex animate-fade-up flex-wrap items-center gap-3 [animation-delay:340ms]"
-          >
+          <div className="mt-7 flex animate-fade-up flex-wrap items-center gap-3 [animation-delay:340ms]">
             <ActionLink href="#projects">
               {hero.primaryCta}
               <ArrowRight size={16} />
@@ -79,9 +63,7 @@ export function Hero() {
             </ActionLink>
           </div>
 
-          <div
-            className="mt-8 flex animate-fade-up items-center gap-3 [animation-delay:420ms]"
-          >
+          <div className="mt-8 flex animate-fade-up items-center gap-3 [animation-delay:420ms]">
             {[
               { href: links.github, label: "GitHub", Icon: Github },
               { href: links.linkedin, label: "LinkedIn", Icon: Linkedin },
@@ -102,10 +84,7 @@ export function Hero() {
         </div>
 
         <div className="relative min-h-[520px] self-stretch sm:min-h-[620px] lg:min-h-0">
-          <div
-            aria-hidden
-            className="absolute inset-0 z-0 scale-110 opacity-25 [&_.panel]:hidden"
-          >
+          <div aria-hidden className="absolute inset-0 z-0 scale-110 opacity-25 [&_.panel]:hidden">
             <NeuralVisual />
           </div>
 
@@ -115,9 +94,18 @@ export function Hero() {
               alt={profile.photoAlt}
               className="h-full w-full object-cover object-[52%_center]"
             />
-            <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-            <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-background via-background/15 to-transparent" />
-            <div aria-hidden className="portrait-sheen absolute inset-y-0 -left-1/3 w-1/4 bg-gradient-to-r from-transparent via-primary/15 to-transparent" />
+            <div
+              aria-hidden
+              className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"
+            />
+            <div
+              aria-hidden
+              className="absolute inset-0 bg-gradient-to-r from-background via-background/15 to-transparent"
+            />
+            <div
+              aria-hidden
+              className="portrait-sheen absolute inset-y-0 -left-1/3 w-1/4 bg-gradient-to-r from-transparent via-primary/15 to-transparent"
+            />
 
             <div className="absolute inset-x-0 bottom-5 flex items-end justify-between gap-5 px-5 sm:px-8 lg:px-12">
               <div>

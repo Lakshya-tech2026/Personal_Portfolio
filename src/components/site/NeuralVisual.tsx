@@ -23,10 +23,7 @@ for (let i = 0; i < layers.length - 1; i += 1) {
 export function NeuralVisual() {
   return (
     <div className="relative mx-auto w-full max-w-lg">
-      <div
-        aria-hidden
-        className="absolute inset-8 rounded-full bg-primary/15 blur-3xl"
-      />
+      <div aria-hidden className="absolute inset-8 rounded-full bg-primary/15 blur-3xl" />
       <svg
         viewBox="0 0 380 400"
         role="img"

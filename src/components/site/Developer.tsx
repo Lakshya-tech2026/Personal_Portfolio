@@ -44,7 +44,8 @@ export function Developer() {
                 </span>
                 <h3 className="mt-5 text-xl font-semibold">Let's connect professionally.</h3>
                 <p className="mt-3 text-sm text-muted-foreground sm:text-base">
-                  Open to internships, collaborations, hackathon teams and conversations about AI/ML.
+                  Open to internships, collaborations, hackathon teams and conversations about
+                  AI/ML.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
