@@ -307,6 +307,74 @@ export const projects: Project[] = [
       future: ["Placeholder improvement one", "Placeholder improvement two"],
     },
   },
+  {
+    id: "ai-study-planner",
+    number: "03",
+    name: "AI Study Planner",
+    category: "AI / Productivity",
+    description:
+      "A smart study-planning app that helps students organize tasks, track focus time, and prioritize learning goals with AI-assisted suggestions.",
+    tags: ["Python", "AI", "Productivity"],
+    placeholder: false,
+    liveUrl: "#",
+    liveLabel: "View Demo",
+    repoUrl: "https://github.com/Lakshya-tech2026",
+    repoLabel: "GitHub",
+    caseStudy: {
+      overview:
+        "This project was created to make learning more structured and personalized. The idea was to help students manage daily study plans based on their workload, deadlines, and focus patterns.",
+      problem:
+        "Students often struggle to balance coursework, revision, and self-learning without a clear daily plan. Manual planning becomes messy and difficult to maintain over time.",
+      approach:
+        "I designed a simple AI-style planning workflow that organizes study tasks, groups them by priority, and suggests better daily routines based on goals and time availability.",
+      technology: ["Python", "Machine Learning", "Productivity Tools"],
+      keyFeatures: [
+        "Priority-based weekly study planner",
+        "Task organization by subject and deadlines",
+        "Smart learning suggestions",
+        "Progress tracking for repeated revision",
+      ],
+      challenges:
+        "The main challenge was turning a broad idea into a functional product with a clear workflow and useful recommendations without overcomplicating the interface.",
+      learned:
+        "I learned how to build practical productivity solutions and how important simple user flows are when designing tools for daily habits.",
+      future: ["Add a dashboard with analytics", "Improve AI recommendations and personalization."],
+    },
+  },
+  {
+    id: "mini-weather-dashboard",
+    number: "04",
+    name: "Weather Dashboard",
+    category: "Data Visualization",
+    description:
+      "A clean weather dashboard that presents current conditions, trends, and useful city-based insights in a readable interface.",
+    tags: ["React", "API", "UI"],
+    placeholder: false,
+    liveUrl: "#",
+    liveLabel: "Open App",
+    repoUrl: "https://github.com/Lakshya-tech2026",
+    repoLabel: "GitHub",
+    caseStudy: {
+      overview:
+        "The goal of this project was to build a user-friendly weather app that makes data easy to scan and visually appealing on both desktop and mobile screens.",
+      problem:
+        "Many weather apps overload users with dense information and poor visual hierarchy. I wanted a simpler dashboard with a more focused experience.",
+      approach:
+        "I structured the app around key metrics like temperature, humidity, wind, and forecast visibility, while keeping the layout clean and responsive.",
+      technology: ["React", "JavaScript", "Weather API"],
+      keyFeatures: [
+        "City-based weather lookup",
+        "Forecast summary cards",
+        "Responsive layout",
+        "Clear visual indicators for conditions",
+      ],
+      challenges:
+        "The hardest part was balancing a polished design with useful information density, ensuring the dashboard stayed readable without feeling cluttered.",
+      learned:
+        "I improved my understanding of UI layout, data presentation, and creating interfaces that turn raw information into something people can use quickly.",
+      future: ["Add charts for trends", "Improve theming and location auto-detect."],
+    },
+  },
 ];
 
 // ── JOURNEY / TIMELINE ───────────────────────────────────────
