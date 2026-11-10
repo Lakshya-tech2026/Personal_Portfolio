@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin, Mail } from "lucide-react";
 import { links, personal } from "@/data/portfolio";
 
 export function Footer() {
@@ -20,11 +20,18 @@ export function Footer() {
             { label: "GitHub", href: links.github, Icon: Github },
             { label: "LinkedIn", href: links.linkedin, Icon: Linkedin },
             { label: "Email", href: `mailto:${links.email}`, Icon: Mail },
-          ].map(({ label, href, Icon }) => (
+            {
+              label: "Download Resume (PDF)",
+              href: "/resume.pdf",
+              Icon: Download,
+              download: "Lakshya-Chandra-Resume.pdf",
+            },
+          ].map(({ label, href, Icon, download }) => (
             <a
               key={label}
               href={href}
-              target={href.startsWith("mailto:") ? undefined : "_blank"}
+              download={download}
+              target={href.startsWith("mailto:") || download ? undefined : "_blank"}
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm text-muted-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-[color:var(--border-strong)] hover:text-foreground"
             >
